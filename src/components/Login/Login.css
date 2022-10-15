@@ -1,0 +1,44 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.login h2 {
+    font-weight: 400; 
+    padding: 2%; 
+}
+
+.login form {
+    text-align: start;
+    background-color: rgb(245, 245, 245);
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login form a{
+    text-align: end;
+    padding: 2%;
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+.optionLogin{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+}
+
+.noCad a {
+    color: #ff6953;
+    text-decoration: underline;
+}
+
+.noCad {
+    display: flex;
+    margin-top: 20px;
+}

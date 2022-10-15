@@ -1,0 +1,23 @@
+.optionsLogin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    background-color: rgb(245, 245, 245);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.optionsLogin p {
+    font-size: 1rem;
+}
+
+.optionsLogin img {
+    width: 30px;
+    padding-right: 5%;
+}
+
+.optionsLogin:disabled {
+    cursor: default;
+    text-decoration: none;
+}

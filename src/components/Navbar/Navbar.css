@@ -1,0 +1,42 @@
+nav ul li {
+    list-style: none;
+    text-align: center;
+    height: 5vh;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: #ff6953;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    padding-right: 2vw;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.dropdown {
+    padding-left: 2vw;
+    border-left: 1px solid rgb(210, 208, 208);
+    height: 5vh;
+    align-items: center;
+    text-align: center;
+    color: #ff6953;
+    display: flex;
+    width: 120px;
+    cursor: pointer;
+}
+
+.dropdown img {
+    width: 20px;
+    padding-left: 2%;
+}

@@ -1,0 +1,12 @@
+header img {
+    width: 11vw;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 10px solid #ff6953;
+    padding: 3vh 5vw 3vh 1vw;
+}
