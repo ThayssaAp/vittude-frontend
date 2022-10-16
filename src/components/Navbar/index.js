@@ -2,7 +2,7 @@ import "./Navbar.css"
 
 const Navbar = () => {
     return (
-        <nav>
+        <nav className="navbar">
             <ul>
                 <li>Como funciona</li>
                 <li>Para você</li>

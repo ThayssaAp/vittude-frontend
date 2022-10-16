@@ -1,4 +1,4 @@
-nav ul li {
+.navbar ul li {
     list-style: none;
     text-align: center;
     height: 5vh;
@@ -6,18 +6,18 @@ nav ul li {
     cursor: pointer;
 }
 
-nav ul li:hover {
+.navbar ul li:hover {
     color: #ff6953;
 }
 
-nav ul {
+.navbar ul {
     display: flex;
     flex-direction: row;
     gap: 2vw;
     padding-right: 2vw;
 }
 
-nav {
+.navbar {
     display: flex;
     flex-direction: row;
     align-items: center;

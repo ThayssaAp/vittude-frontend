@@ -28,18 +28,18 @@
     text-decoration: underline;
 }
 
-.optionLogin {
+.option-login {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.noCad a {
+.criar-conta a {
     color: #ff6953;
     text-decoration: underline;
 }
 
-.noCad {
+.criar-conta{
     display: flex;
     margin-top: 20px;
 }
