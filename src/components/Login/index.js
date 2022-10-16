@@ -1,31 +1,57 @@
-import InputForm from "../InputForm";
+import FieldForm from "../FieldForm";
 import Button from "../Button"
 import "./Login.css"
 import Option from "../Option";
-import { useState } from "react";
+// import { useState } from "react";
+// import Login from "../../services/axios"
+import { Formik, Form } from "formik";
+import { schema } from "../../schemas";
 import Login from "../../services/axios"
 
-const Forms = () => {
-    const [ email, setEmail ] = useState("")
-    const [ password, setPassword ] = useState("")
-    const handleClick = async () => {
-        const response = await Login(email, password) 
-        console.log(response)
-    }
+const onSubmit = async (values) => {
+    const response = await Login(values.email, values.password)
+    console.log(response)
+}
 
+const Forms = () => {
     return (
         <div className="login">
             <h2>Faça seu login</h2>
-            <form>
+            <div className="login-form">
                 <div className="optionLogin">
-                    <Option src="img/psico.svg" option="Psicológo" disabled={true}/>
-                    <Option src="img/paciente.svg" option="Paciente" disabled={false}/>
+                    <Option src="img/psico.svg" option="Psicológo" disabled={true} />
+                    <Option src="img/paciente.svg" option="Paciente" disabled={false} />
                 </div>
-                <InputForm onChange={event => {setEmail(event.target.value)}} name="Email*" type="email" autoComplete="email" placeholder="Digite seu email" />
-                <InputForm onChange={event => {setPassword(event.target.value)}} name="Senha*" type="password" autoComplete="new-password" placeholder="Digite sua senha" />
-                <a>esqueci minha senha!</a>
-                <Button onClick={handleClick} type="button" nameButton="Entrar" />
-            </form>
+                <Formik
+                    validationSchema={schema}
+                    initialValues={{
+                        email: "",
+                        password: ""
+                    }}
+                    onSubmit={onSubmit}
+                >
+                    {() => (
+                        <Form>
+                            <FieldForm
+                                label="Email*"
+                                name="email"
+                                type="email"
+                                autoComplete="email"
+                                placeholder="Digite seu email"
+                            />
+                            <FieldForm
+                                label="Senha*"
+                                name="password"
+                                type="password"
+                                autoComplete="new-password"
+                                placeholder="Digite sua senha"
+                            />
+                            <a>esqueci minha senha!</a>
+                            <Button onClick={onSubmit} type="submit" nameButton="Entrar" />
+                        </Form>
+                    )}
+                </Formik>
+            </div>
             <div className="noCad">
                 <p>Não é cadastrado?</p>
                 <a>Crie uma conta</a>

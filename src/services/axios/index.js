@@ -8,11 +8,13 @@ async function Login(email, password) {
     })
 
     if(response.data.message){
+        
         window.alert(response.data.message)
+        return response.data.message
     } else {
         window.alert(response.data.error)
+        return response.data.error
     }
-    return response.data
 }
 
 export default Login;

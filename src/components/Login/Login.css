@@ -12,7 +12,7 @@
     padding: 2%; 
 }
 
-.login form {
+.login-form {
     text-align: start;
     background-color: rgb(245, 245, 245);
     width: 500px;
@@ -20,18 +20,18 @@
     flex-direction: column;
 }
 
-.login form a{
-    text-align: end;
+.login-form a{
+    display: flex;
+    justify-content: end;
     padding: 2%;
     color: #007BFF;
     text-decoration: underline;
 }
 
-.optionLogin{
+.optionLogin {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 25px;
 }
 
 .noCad a {
