@@ -20,15 +20,15 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto 
 
-Esta é a ***Tela de Login - Vittude***, é um Projeto que **utiliza React, Formik e Yup para validação do formulário, e Axios para conexão com a [API Mock](https://github.com/ThayssaAp/vittude-api-mock)**.
+Esta é a ***Tela de Login - Vittude***, é um Projeto que **utiliza React, Formik e Yup para validação do formulário, e Axios para conexão com a [API Mock](https://github.com/ThayssaAp/vittude-api-mock)**. O projeto utiliza um sistema de deploy gratuito, por conta disso, há uma demora para requisições e resposta.
 Você pode acessar o projeto clicando [aqui](https://vittude-frontend.onrender.com).
 
 
 ## ⚙️ Abrir e rodar o projeto
 
-- Passo 1: Clonar o repositório na sua máquina
-
-- Passo 2: Abrir no terminal e inserir o comando "npm start"
+- Clonar o repositório usando `https://github.com/ThayssaAp/vittude-frontend.git`
+- Abrir no terminal e inserir o comando `npm install`;
+- Inserir o comando `npm start` para iniciar o projeto.
 
 <br>
 
