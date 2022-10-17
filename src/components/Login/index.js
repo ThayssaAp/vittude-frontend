@@ -6,9 +6,11 @@ import { Formik, Form } from "formik";
 import { schema } from "../../schemas";
 import Login from "../../services/axios";
 
-const onSubmit = async (values) => {
-    const response = await Login(values.email, values.password)
-    console.log(response)
+const onSubmit = async (form) => {
+    if(!form.email || !form.password) return
+    const response = await Login(form.email, form.password)
+    window.alert(response)
+    
 };
 
 const Forms = () => {
@@ -45,7 +47,7 @@ const Forms = () => {
                                 placeholder="Digite sua senha"
                             />
                             <a>esqueci minha senha!</a>
-                            <Button onClick={onSubmit} type="submit" nameButton="Entrar" />
+                            <Button onClick={onSubmit} type="submit" name="Entrar" />
                         </Form>
                     )}
                 </Formik>
