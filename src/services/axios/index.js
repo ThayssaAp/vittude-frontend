@@ -1,7 +1,7 @@
 import axios from "axios";
 
 async function Login(email, password) {
-    const url = 'http://localhost:3010/login'
+    const url = 'https://vittude-api-mock.onrender.com/login'
     const response = await axios.post(url, {
         email, password
     })
