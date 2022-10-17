@@ -78,6 +78,11 @@
     background-color: #ff6953;
 }
 
-.btn-dropdown:hover a {
+.btn-dropdown:hover .link-btn {
     color: #fff;
+}
+
+.btn-dropdown .link-btn {
+    color: #ff6953;
+    text-decoration: none;
 }

@@ -19,7 +19,7 @@ const Navbar = () => {
                     </div>
                     <div className="box-dropdown">
                         <p>Entre para ver seu perfil, ter acesso as suas consultas e seu beneficio corporativo</p>
-                        <button className="btn-dropdown"><Link to="/login">Entrar</Link></button>
+                        <button className="btn-dropdown"><Link class="link-btn" to="/login">Entrar</Link></button>
                     </div>
                 </div>
             </nav>
