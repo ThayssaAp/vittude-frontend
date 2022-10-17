@@ -6,11 +6,11 @@ import { Formik, Form } from "formik";
 import { schema } from "../../schemas";
 import Login from "../../services/axios";
 
-const onSubmit = async (form) => {
+const onSubmit = async (form, actions) => {
     if(!form.email || !form.password) return
     const response = await Login(form.email, form.password)
     window.alert(response)
-    
+    actions.resetForm({form: ""})
 };
 
 const Forms = () => {
@@ -31,7 +31,7 @@ const Forms = () => {
                     onSubmit={onSubmit}
                 >
                     {() => (
-                        <Form>
+                        <Form >
                             <FieldForm
                                 label="Email*"
                                 name="email"

@@ -5,8 +5,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 30px 75px;
+    padding: 0 6%;
     margin-top: 30px;
+    bottom: 0;
 }
 
 .footer-resp {

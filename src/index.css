@@ -1,7 +1,26 @@
+@import url('https://fonts.googleapis.com/css2? family= Open+Sans:wght@400;500;700 & display=swap');
+
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Arial' ,'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  height: 80vh;
+}
+
+footer {
+  height: 20vh;
+}
+
+@media screen and (min-height: 900px){
+  footer {
+      bottom: 0;
+      position: fixed;
+  }
+
+  body{
+    height: 100vh;
+  }
 }

@@ -1,7 +1,6 @@
 .navbar ul li {
     list-style: none;
     text-align: center;
-    height: 5vh;
     font-weight: 500;
     cursor: pointer;
 }
@@ -24,10 +23,9 @@
     text-align: center;
 }
 
-.dropdown {
+.li-dropdown {
     padding-left: 2vw;
     border-left: 1px solid rgb(210, 208, 208);
-    height: 5vh;
     align-items: center;
     text-align: center;
     color: #ff6953;
@@ -36,7 +34,50 @@
     cursor: pointer;
 }
 
-.dropdown img {
+.box-dropdown {
+    width: 200px;
+    height: auto;
+    min-height: 100px;
+    background-color: #fff;
+    min-width: 200px;
+    position: absolute;
+    top:55px;
+    right: 40px;
+    color: rgb(100, 100, 100);
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    text-align: center;
+    padding: 20px;
+}
+
+.dropdown:hover .box-dropdown {
+    display: block;
+}
+
+.li-dropdown img {
     width: 20px;
     padding-left: 2%;
+}
+
+.btn-dropdown {
+    border: #ff6953 solid 1px;
+    background-color: #fff;
+    padding: 6%;
+    margin-top: 30px;
+    width: 180px;
+    border-radius: 3px;
+}
+
+.btn-dropdown p {
+    color: #ff6953;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn-dropdown:hover {
+    background-color: #ff6953;
+}
+
+.btn-dropdown:hover a {
+    color: #fff;
 }
